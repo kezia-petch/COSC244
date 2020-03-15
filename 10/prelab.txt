@@ -1,0 +1,57 @@
+Q1) Send method sends the line parameter to the output stream.
+
+Q2) stdout of client.
+
+Q3) toString method returns the string representation of the id, which consists
+of "client_" + ++count, causing count to be incremented every time toString is
+called, allowing the number of clients connected to be tracked and printed.
+
+Q4) No, this new client is classified with an incremented id number, as this id
+number keeps track of the different clients that have connected instead of the
+number of clients that are connected. This happens as toString is called again
+causing the id number to be incremented.
+
+Q5)
+try{
+new ChatServer().startServer(Interger.parseInt(arg[0]));
+}
+
+private static List<ClientHandler> clients = new Linklist<ClientHandler>(); -
+creates a new ChatServer.
+
+public void startServer(int port) throws Exception{
+ServerSocket serverSocket = new ServerSocket (port);
+System.err.println("ChatServer started");
+while{
+ClientHandler ch = new ClientHandler(serverSocket.accept()); - calls accept()
+method on serverSocket. When a client connects accept() returns a Socket instance.
+
+Q6) 13 threads
+
+Q7) 
+Server:
+Main completion = thread++ (1)
+Client1 connection and start() = thread++ (2)
+
+Client1:
+Main completion = thread++ (3)
+First ReadWriteThread() = thread++ (4)
+Second ReadWriteThread() = thread++ (5)
+
+Server:
+Client2 connection and start() = thread++ (6)
+
+Client2:
+Main completion = thread++ (7)
+First ReadWriteThread() = thread++ (8)
+Second ReadWriteThread() = thread++ (9)
+
+Server:
+Client3 connection and start() = thread++ (10)
+
+Client3:
+Main completion = thread++ (11)
+First ReadWriteThread() = thread++ (12)
+Second ReadWriteThread() = thread++ (13)
+
+

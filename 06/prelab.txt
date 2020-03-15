@@ -1,0 +1,24 @@
+1) This class is a bridge from byte streams to character streams: it reads bytes
+and decodes them into characters using a specified charset.
+2) For top efficiency consider wrapping an Inputstreamreader within a
+bufferedreader.
+3) readLine() - returns a line of text
+4) println(string x) - prints a string and then terminates the line
+5) serversocket(int port) - creates a server socket, bound to the specified port
+6) accept() - listens for a connection to be made to this socket and accepts it
+7) Most appropriate constructor - Socket(InetAddress address, int port)
+8) getInputStream - returns an input stream for this socket
+9) getOutputStream - returns an output stream for this socket
+10) Date() - allocates a date object and initialises it so that it represents
+the time at which it was allocated, measured to the nearest millisecond
+11)
+import java.util.Calender;
+
+Calender calendar = Calender.getInstance();
+SimpleDataFormat formatter = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss");
+System.out.println(formatter.format(calendar.getTime());
+
+Date d = new Date();
+d.toString();
+
+12) port number required host optional 

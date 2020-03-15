@@ -1,0 +1,34 @@
+Q1) Two ways to create a new thread. First = declare a class to be a subclass of
+Thread, this should override the run method of class Thread. Second = declare a
+class that implements the Runnable interface, which also implements the run
+method.
+
+Q2) Both must contain run method.
+
+Q3) start() method.
+
+Q4) Just code for Server as it is definitley a server, no checks required to see
+if it is a client or a Server.
+
+Q5) Line 14/15 creates a Thread, using specific input and output params, and
+then starts the created thread. 
+- Line 14 forwards input to socket - the SENDER
+- Line 15 takes input from socket and forwards it to the output stream - the RECIEVER
+
+Q6) WILL MAKE A DIFFERENCE.
+
+Q7) 
+public class Client {
+public static void main(String[] args){
+try{
+int port = Integer.parseInt(args[0]);
+Socket socket = new Socket(args[1], port);
+System.err.println("Connected to " + args[1] + " on port " + port);
+new ReadWriteThread(System.in, socket.getOutputStream()).start();
+new ReadWriteThread(socket.getInputStream(), System.out).start();
+}
+}
+}
+
+Q8) Due to some fruits trying to print at the same time on one thread, thus causing some
+to be interruptted while printing.

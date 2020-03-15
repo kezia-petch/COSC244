@@ -1,0 +1,28 @@
+import java.util.Scanner;
+import java.io.*;
+
+public class Caesar{
+    
+    public static void main(String[] args){
+        String shiftStr = args[0];
+        int shift = Integer.parseInt(shiftStr);
+
+        InputStreamReader in = new InputStreamReader(System.in);
+        int bb = 0;
+
+        int shiftedNum = 0;
+        
+        while ((bb = in.read()) > -1){
+            shiftedNum = bb + shift;
+
+            if (shiftedNum > 255){
+                shiftedNum = shiftedNum - 255;
+            }
+            
+            System.out.write(shiftedNum);
+        }
+
+        System.out.close();
+
+    }
+}

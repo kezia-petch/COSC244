@@ -1,0 +1,12 @@
+1) Returns the local port number to which this socket is bound or -1 if the socket is not bound yet.
+
+2) Returns the remote IP address to which this socket is connected, or null if the socket is not connected.
+
+3) Returns the remote port number to which this socket is connected, or 0 if the socket is not connected yet.
+
+4) 
+
+5)
+
+6)
+

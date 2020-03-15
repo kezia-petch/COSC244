@@ -1,0 +1,27 @@
+import java.util.Scanner;
+import java.io.*;
+
+public class BitLevel{
+    
+    public static void main(String[] args){
+
+        InputStreamReader in = new InputStreamReader(args[0]);
+        OutputStreamReader out = new OutputStreamReader(args[1]);
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Key: ");
+        int[] key = sc.nextLine().getBytes();
+        int index = 0;
+        int xorResult = 0;
+        int input;
+
+        while ((input = in.read()) > -1){
+            xorResult =  key[index++] ^ input;
+            index = index % key.length;
+            out.write(xorResult);
+        }
+
+        out.close();
+       
+    }
+}

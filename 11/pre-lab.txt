@@ -1,0 +1,17 @@
+1) Returns the local port number to which this socket is bound or -1 if the socket is not bound yet.
+
+2) Returns the remote IP address to which this socket is connected, or null if the socket is not connected.
+
+3) Returns the remote port number to which this socket is connected, or 0 if the socket is not connected yet.
+
+4) This added statement prints (to stderr) "Connected to" the remote IP address
+of which this socket is connected to "on port" the remote port number of which
+this socket is connected to "using local port" the local port number of which
+this socket is connected to.
+
+5) Lines 55 to 58 notify the user that the connection has occurred, the clients
+host IP address is then printed along with the clients port number. The local
+port number is then printed - all to stderr.
+
+6) 
+

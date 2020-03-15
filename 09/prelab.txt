@@ -1,0 +1,34 @@
+Q1) Synchronized() is applied to our list of clients, and give exclusive access
+to clients. If this is not done it is possible for another thread to modify
+clients in a unpredictable way.
+
+Q2) Line 15 as it starts the MultiServer that prints output to all clients
+- new MultiServer().start();
+
+Q3) This code allows the execution of run(), due to the .start() present within the code
+
+Q4) ChatServer started
+
+Q5) Accepted connection from client_1.
+
+Q6) Connected to localhost on port 7777
+Welcome! You are client_1.
+
+Q7) Accepted connection from client_2.
+
+Q8) Connected to localhost on port 7777
+Welcome! You are client_2.
+
+Q9) client_1: Hello from client 1
+
+Q10) client_1: Hello from client 1
+
+Q11) Sending 'Hello from client 1' to : [client_1, client_2, client_3]
+
+Q12) client_3 closed connection!
+
+Q13) client_1: Hi my name is Kezia! :)
+
+Q14) Sending 'Hi my name is Kezia! :)' to : [client_1, client_2]
+
+Q15) Client4

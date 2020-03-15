@@ -1,0 +1,19 @@
+1) ^ and | are bitwise exclusive OR operations
+
+2) A FileInputStream obtains input bytes from a file in a file system.
+FileInputStream is meant for reading streams of raw bytes such as image data.
+
+3) FileInputStream inputStream = new FileInputStream("hello.txt");
+
+4) read() = reads the next byte. Returns the next byte or -1 if the end of the
+file is reached.
+
+5) This class overrides all methods of OutputStream with versions that pass all requests to the underlying output stream.
+
+6) 
+
+7) write(byte)
+
+8) close()
+
+9)
