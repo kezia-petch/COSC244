@@ -1,0 +1,22 @@
+1 - InputStream
+2 - System.in.read() / readByte()
+3 - char
+4 - -1
+5 - PrintStream
+6 - 
+7 - 
+8 -
+  InputStream in = System.in;
+  OutputStream out = System.out;
+  
+
+
+
+9 - nextLine()
+10 - returns a String, returns null.
+11 - Scanner console = new Scanner(System.in);
+     int x = console.nextInt();
+12 - hasNextLine()
+13 - nextLine()
+14 - next(), have to always call hasNext() before this method to ensure
+     there is something to read.

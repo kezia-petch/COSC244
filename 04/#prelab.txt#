@@ -1,0 +1,17 @@
+1)	
+2) 	bitFieldSize parameter = an interger variable that determines the initial size of the bitfield
+3) 	setBitFieldSize() purpose = this method sets the size of the bitfield to equal "bits"
+	its parameter.
+4)	write() = writes a bitfield into the output stream
+5)	close() = method to correctly flush any remaining bitfields in write buffer before closing 
+	output chain.
+6)	setBitFieldSize() purpose = this method sets the size of the bitfield to equal "bits"
+	its parameter.
+7)	read() = reads a bitfield from the input stream where the number of bits read is the current bitfield length. 
+8)	LookUpTable() = Creates a new look-up table, initialised with codes for every 8-bit character
+9)	add() = adds a new string to the created look-up table, takes a string as the parameter - this
+	is what is added to the look-up table.
+10)	hasString() = Determines whether a given string has already been added to the look-up table
+11)	getCode() = Look up the compression code for a given string 
+12)	hasCode() = Determines whether a iven code is contained in the look-up table
+13) getString() = Looks up a string associated with a given compression code (code is input as a parameter)

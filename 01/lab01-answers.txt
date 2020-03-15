@@ -1,0 +1,36 @@
+
+Exercise 1.
+
+  Absolute or relative paths?
+  
+  /home/cshome/u/username  Absolute
+                  244/bin  Relative
+                  /bin/ls  Absolute
+                 bin/sort  Relative
+              /usr/bin/wc  Absolute
+   home/cshome/u/username  Relative
+     ../cshome/u/username  Absolute
+                 ~/newdir  Absolute
+                /bin/sort  Absolute
+
+Exercise 2.
+
+  Files in /home/cshome/coursework/244/files/01
+  Alice.txt, Daniel.jpg, France.jpg, sample-text.txt, another_directory, dir1,
+  greeting.txt
+
+  Files in /home/cshome/coursework/244/files/01/dir1
+  1file.txt, another_file.txt, long-list-files.txt
+
+
+Exercise 3.
+
+  1.C-a
+  2.C-e
+  3.C-k
+  4.C-x 2
+  5.C-x 1
+  6.When pressing for the first time, the cursor is moved to the centre of the
+  screen, when pressed again the cursor moves to the top of the screen and then
+  to the bottom, if pressed for a third time.
+  7.C-a, C-e, C-k
